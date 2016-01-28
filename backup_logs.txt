@@ -1,0 +1,5 @@
+todo ok
+$date todo ok
+\$date todo ok
+\date todo ok
+$(date +%d%m%y) todo ok
