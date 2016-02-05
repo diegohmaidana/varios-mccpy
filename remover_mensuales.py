@@ -3,12 +3,13 @@
 
 import os
 import locale
+import shutil
 from datetime import date, timedelta
 
 path_inicio = '/bases/'
 meses = {'ene', 'feb', 'mar', 'abr',
          'may', 'jun', 'jul', 'ago',
-         'sep', 'oct', 'nov', 'dic'
+         'sep', 'oct', 'nov', 'dic', 'dir'
          }
 
 
@@ -22,8 +23,7 @@ def borrar_meses_ant():
         if dirs != []:
             for dir in dirs:
                 if (dir in meses) and (dir != mes_anterior):
-                    os.mkdir(base + '/' + 'dir', 0775)
-                    # os.removedirs(base + '/' + dir)
+                    shutil.rmtree(base + '/' + dir)
 
 
 if __name__ == '__main__':
