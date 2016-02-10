@@ -9,7 +9,7 @@ from datetime import date, timedelta
 path_inicio = '/bases/'
 meses = {'ene', 'feb', 'mar', 'abr',
          'may', 'jun', 'jul', 'ago',
-         'sep', 'oct', 'nov', 'dic', 'dir'
+         'sep', 'oct', 'nov', 'dic'
          }
 
 
